@@ -177,7 +177,7 @@ def process_service(service_instance,argument):
                                      stderr=None,
                                      stdout=f,
                                      timeout=timeout)
-        sys.stderr.write("\n\n\Command: {0}\n\n\n".format(cmd))
+        sys.stderr.write("\n\n Command: {0}\n\n\n".format(cmd))
         # res = subprocess.check_output(cmd,stderr=sys.stderr)
         # sys.stderr.write("\n\n\nResult: {0}\n\n\n".format(res))
     except subprocess.TimeoutExpired as e:
